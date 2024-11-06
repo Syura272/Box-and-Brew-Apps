@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box & Brew Coffee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <header class="navbar">
+        <div class="logo">Boxandbrewcoffee.com</div>
+        <div class="menu-icon" onclick="toggleMenu()" aria-label="Toggle navigation menu">&#9776;</div>
+        <nav class="nav-links" id="nav-links">
+        </nav>
+    </header>
+
+    <!-- Header Section -->
+    <main>
+        <section class="main-header">
+            <h1>Box & Brew Coffee</h1>
+            <p class="subtitle">Curated for coffee lovers</p>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="menu-grid">
+            <div class="menu-item">
+                <img src="C:\Users\ACER\Downloads\resource folder\capucinno.jpg" alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p><strong>Hot:</strong> $3.00<br><strong>Cold:</strong> $3.50</p>
+                <button onclick="addToCart('Cappuccino (Hot)', 3)">Add Hot to Cart</button>
+                <button onclick="addToCart('Cappuccino (Cold)', 3.5)">Add Cold to Cart</button>
+            </div>
+			 <div class="menu-item">
+            <img src="C:\Users\ACER\Downloads\resource folder\mocha.jpg" alt="Cappuccino">
+            <h3>Mocha</h3>
+            <p><strong>Hot:</strong> $4.00<br><strong>Cold:</strong> $4.50</p>
+            <button onclick="addToCart('Mocha (Hot)', 3)">Add Hot to Cart</button>
+            <button onclick="addToCart('Mocha (Cold)', 3.5)">Add Cold to Cart</button>
+        </div>
+		<div class="menu-item">
+            <img src="C:\Users\ACER\Downloads\resource folder\espresso.jpg" alt="Espresso">
+            <h3>Espresso</h3>
+            <p><strong>Hot:</strong> $3.00<br><strong>Cold:</strong> $3.00</p>
+            <button onclick="addToCart('Espresso (Hot)', 3)">Add Hot to Cart</button>
+            <button onclick="addToCart('Espresso(Cold)', 3)">Add Cold to Cart</button>
+        </div>
+		<div class="menu-item">
+            <img src="C:\Users\ACER\Downloads\resource folder\americano.jpg" alt="Americano">
+            <h3>Americano</h3>
+            <p><strong>Hot:</strong> $3.00<br><strong>Cold:</strong> $3.00</p>
+            <button onclick="addToCart('Cappuccino (Hot)', 3)">Add Hot to Cart</button>
+            <button onclick="addToCart('Cappuccino (Cold)', 3)">Add Cold to Cart</button>
+        </div>
+		<div class="menu-item">
+            <img src="C:\Users\ACER\Downloads\resource folder\caramel latte.jpg"  alt="Caramel Latte">
+            <h3>Caramel Latte</h3>
+            <p><strong>Hot:</strong> $5.00<br><strong>Cold:</strong> $5.50</p>
+            <button onclick="addToCart('Caramel Latte (Hot)', 5)">Add Hot to Cart</button>
+            <button onclick="addToCart('Caramel Latte (Cold)', 5.5)">Add Cold to Cart</button>
+        </div>
+		<div class="menu-item">
+            <img src="C:\Users\ACER\Downloads\resource folder\caramel macchiato.jpg"  alt="Caramel Macchiato">
+            <h3>Caramel Macchiato</h3>
+            <p><strong>Hot:</strong> $5.00<br><strong>Cold:</strong> $5.50</p>
+            <button onclick="addToCart('Caramel Macchiato (Hot)', 5)">Add Hot to Cart</button>
+            <button onclick="addToCart('Caramel Macchiato (Cold)', 5.5)">Add Cold to Cart</button>
+        </div>
+		<div class="menu-item">
+            <img src="C:\Users\ACER\Downloads\resource folder\sp.latte.jpg" alt="Spanish Latte">
+            <h3>Spanish Latte</h3>
+            <p><strong>Hot:</strong> $5.00<br><strong>Cold:</strong> $5.50</p>
+            <button onclick="addToCart('Spanish Latte(Hot)', 5)">Add Hot to Cart</button>
+            <button onclick="addToCart('Spanish Latte (Cold)', 5.5)">Add Cold to Cart</button>
+        </div>
+		<div class="menu-item">
+            <img src="C:\Users\ACER\Downloads\resource folder\Iced Chocolate.jpg"  alt="Iced Chocolate">
+            <h3>Iced Chocolate</h3>
+            <strong>Cold:</strong> $4.50</p> 
+            <button onclick="addToCart('Iced Chocolate (Cold)', 4.5)">Add to Cart</button>
+        </div>
+		<div class="menu-item">
+            <img src="C:\Users\ACER\Downloads\resource folder\matcha latte.jpg" alt="Matcha Latte">
+            <h3>Matcha Latte</h3>
+            <p><strong>Hot:</strong> $5.50<br><strong>Cold:</strong> $6.0</p>
+            <button onclick="addToCart('Matcha Latte (Hot)', 5.5)">Add Hot to Cart</button>
+            <button onclick="addToCart('Matcha Latte (Cold)', 6)">Add Cold to Cart</button>
+        </div>
+		<div class="menu-item">
+            <img src="C:\Users\ACER\Downloads\resource folder\matcha strawberry.jpg" alt="Matcha Strawberry">
+            <h3>Matcha Strawberry</h3>
+            <strong>Cold:</strong> $6.50</p>
+            <button onclick="addToCart('Matcha Strawberry (Cold)', 6.5)">Add to Cart</button>
+        </div>
+		<div class="menu-item">
+            <img src="C:\Users\ACER\Downloads\resource folder\barbie mocktail.jpg" alt="Barbie Mocktails">
+            <h3>Barbie Mocktails</h3>
+            <strong>Cold:</strong> $5.00</p>
+            <button onclick="addToCart('Barbie Mocktails (Cold)', 5)">Add to Cart</button>
+        </div>
+		<div class="menu-item">
+            <img src="C:\Users\ACER\Downloads\resource folder\passionade.jpg" alt="Passionade">
+            <h3>Passionade</h3>
+            <strong>Cold:</strong> $5.00</p>
+            <button onclick="addToCart('Passionade(Cold)', 5)">Add to Cart</button>
+        </div>
+		<div class="menu-item">
+            <img src="C:\Users\ACER\Downloads\resource folder\kiwious.jpg"  alt="Kiwious">
+            <h3>Kiwious</h3>
+            <strong>Cold:</strong> $5.00</p>
+            <button onclick="addToCart('Kiwious (Cold)', 5)">Add to Cart</button>
+        </div>
+            <!-- Add more menu items as needed -->
+        </section>
+
+            <!-- Additional menu items go here -->
+        </section>
+
+      <!-- Cart Section -->
+        <div id="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="total-price">0.00</span></p>
+            <button id="checkout-btn" disabled>Proceed to Payment</button>
+            <button class="button" style="background-color: #b72a2a;" onclick="clearCart()">Clear Cart</button>
+        </div>
+
+        <!-- Modals for Sign-Up, Login, and Payment -->
+        <div id="signup-modal" class="modal" style="display:none;">
+            <div class="modal-content">
+                <span class="close" id="close-signup">&times;</span>
+                <h2>Sign Up</h2>
+                <form id="signup-form">
+                    <input type="text" id="signup-username" placeholder="Username" required>
+                    <input type="password" id="signup-password" placeholder="Password" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <p id="signup-error" style="color:red;"></p>
+            </div>
+        </div>
+
+        <div id="login-modal" class="modal" style="display:none;">
+            <div class="modal-content">
+                <span class="close" id="close-login">&times;</span>
+                <h2>Login</h2>
+                <form id="login-form">
+                    <input type="text" id="login-username" placeholder="Username" required>
+                    <input type="password" id="login-password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <p id="login-error" style="color:red;"></p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; Unit G11, Ground Floor, Madang Cove</p>
+        </footer>
+<script>
+    let users = [];
+    let currentUser = null;
+    let cart = [];
+    let totalPrice = 0;
+
+    // Add to Cart Function
+    function addToCart(item, price) {
+        cart.push({ item, price });
+        totalPrice += price;
+        renderCart();
+    }
+
+    // Render Cart Function
+    function renderCart() {
+        const cartItemsContainer = document.getElementById('cart-items');
+        cartItemsContainer.innerHTML = '';
+        cart.forEach(cartItem => {
+            cartItemsContainer.innerHTML += `<li>${cartItem.item} - $${cartItem.price.toFixed(2)}</li>`;
+        });
+        document.getElementById('total-price').textContent = totalPrice.toFixed(2);
+        document.getElementById('checkout-btn').disabled = cart.length === 0;
+    }
+
+    // Clear Cart Function
+    function clearCart() {
+        cart = [];
+        totalPrice = 0;
+        renderCart();
+    }
+
+    // Checkout Button Click Event
+    document.getElementById('checkout-btn').addEventListener('click', function() {
+        if (!currentUser) {
+            if (users.length === 0) {
+                // If no users exist, show sign-up modal first
+                document.getElementById('signup-modal').style.display = 'block';
+            } else {
+                // If user already exists, show login modal
+                document.getElementById('login-modal').style.display = 'block';
+            }
+        } else {
+            // Proceed with payment if logged in
+            processPayment();
+        }
+    });
+
+    // Process Payment Function
+    function processPayment() {
+        // Simulate a payment process
+        alert('Processing your payment...');
+        clearCart();  // Clear the cart after payment
+
+        // Show payment success modal
+        document.getElementById('payment-success-modal').style.display = 'block';
+    }
+
+    // Sign-Up Form Submission
+    document.getElementById('signup-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const username = document.getElementById('signup-username').value;
+        const password = document.getElementById('signup-password').value;
+        if (users.find(user => user.username === username)) {
+            document.getElementById('signup-error').textContent = 'Username already exists!';
+        } else {
+            users.push({ username, password });
+            document.getElementById('signup-error').textContent = 'Account created! Please log in.';
+            document.getElementById('signup-modal').style.display = 'none';
+            document.getElementById('login-modal').style.display = 'block';
+        }
+    });
+
+    // Login Form Submission
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const username = document.getElementById('login-username').value;
+        const password = document.getElementById('login-password').value;
+        const user = users.find(user => user.username === username && user.password === password);
+        if (user) {
+            currentUser = user;
+            document.getElementById('login-modal').style.display = 'none';
+            alert('Logged in successfully!');
+            processPayment();  // Proceed with payment after successful login
+        } else {
+            document.getElementById('login-error').textContent = 'Invalid credentials!';
+        }
+    });
+
+    // Close Modals
+    function closeModal(modalId) {
+        document.getElementById(modalId).style.display = 'none';
+    }
+
+    document.getElementById('close-signup').addEventListener('click', () => closeModal('signup-modal'));
+    document.getElementById('close-login').addEventListener('click', () => closeModal('login-modal'));
+    document.getElementById('close-payment').addEventListener('click', () => closeModal('payment-success-modal'));
+
+    // Close payment success modal when clicking outside the modal
+    window.onclick = function(event) {
+        const paymentModal = document.getElementById('payment-success-modal');
+        if (event.target === paymentModal) {
+            paymentModal.style.display = 'none';
+        }
+    };
+</script>
